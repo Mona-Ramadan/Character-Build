@@ -1,0 +1,187 @@
+.hidden {
+  display: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(67, 4, 13);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  padding: 5px 0;
+}
+
+#main-logo {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  /*margin top and bottom, 0. Margin left and right auto */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+#character_nav {
+  background-color: #a87f7f;
+  background-image: url("../images/Header\ Photo.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.characters {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.characters li {
+  height: 800px;
+  margin: 10px 8px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 155px 0 rgb(206, 31, 31) inset;
+  transition: box-shadow 0.2s ease;
+}
+
+.characters li a {
+  text-decoration: none;
+}
+
+.characters li:hover {
+  box-shadow: 0 900px 0 #f8a811 inset;
+}
+
+.characters li h5 {
+  color: #fff;
+  padding: 12px 8px;
+  font-size: large;
+}
+
+article,
+#instructions {
+  padding: 20px;
+}
+
+article h3,
+#instructions h3 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+article p,
+#instructions p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.incr {
+  width: 180px;
+  height: 700px;
+  background-image: url("../images/The\ Incredibles.jpg");
+}
+
+#father {
+  background-position: -720px 0;
+}
+#jack-jack {
+  background-position: -360px 0;
+}
+#mother {
+  background-position: -540px 0;
+}
+#miss-disappear {
+  background-position: -180px 0;
+}
+#frozon {
+  background-position: -900px 0;
+}
+
+#dash:hover,
+#father:hover,
+#jack-jack:hover,
+#mother:hover,
+#miss-disappear:hover,
+#frozon:hover {
+  background-position-y: -700px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.sticky_footer {
+  height: 80px;
+  background-color: rgb(67, 4, 13);
+  position: sticky;
+  top: 100%;
+  box-shadow: 0 155px 0 rgb(87, 48, 48) inset;
+}
+
+.lightbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  background-image: url("../images/dash2.webp");
+  background-repeat: no-repeat;
+  background-size: 60vh;
+  background-position: 70px bottom;
+  display: none;
+}
+
+#lightbox2 {
+  background-image: url("../images/Father2.jpg");
+}
+
+.lightbox_close {
+  position: absolute;
+  top: 20px;
+  right: 5%;
+
+  color: white;
+  font-size: 45px;
+
+  text-decoration: none;
+  font-weight: bolder;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.lightbox_close:hover {
+  opacity: 0.5;
+  color: #f8a811;
+}
+
+.lightbox article {
+  width: 55%;
+  margin-left: 40%;
+  padding-top: 50px;
+}
+
+.lb_text,
+.lb_heading {
+  text-align: left;
+}
+
+.lb_text {
+  line-height: 26px;
+}
+
+/* .lightbox#lightbox2 or .lightbox#lightbox */
+.lightbox:target {
+  display: block;
+}
